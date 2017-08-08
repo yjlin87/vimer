@@ -1,1 +1,1 @@
-# vimer
+# Vim Configuration
