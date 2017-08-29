@@ -22,18 +22,18 @@
 "
 " Jason Duell       jduell@alumni.princeton.edu     2002/3/7
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" cscope findµÄÓÃ·¨:
+" cscope findçš„ç”¨æ³•:
 "
 " cs find c|d|e|f|g|i|s|t name
 "
-" s: ²éÕÒCÓïÑÔ·ûºÅ£¬¼´²éÕÒº¯ÊýÃû¡¢ºê¡¢Ã¶¾ÙÖµµÈ³öÏÖµÄµØ·½
-" g: ²éÕÒº¯Êý¡¢ºê¡¢Ã¶¾ÙµÈ¶¨ÒåµÄÎ»ÖÃ£¬ÀàËÆctagsËùÌá¹©µÄ¹¦ÄÜ
-" d: ²éÕÒ±¾º¯Êýµ÷ÓÃµÄº¯Êý
-" c: ²éÕÒµ÷ÓÃ±¾º¯ÊýµÄº¯Êý
-" t: ²éÕÒÖ¸¶¨µÄ×Ö·û´®
-" e: ²éÕÒegrepÄ£Ê½£¬Ïàµ±ÓÚegrep¹¦ÄÜ£¬µ«²éÕÒËÙ¶È¿ì¶àÁË
-" f: ²éÕÒ²¢´ò¿ªÎÄ¼þ£¬ÀàËÆvimµÄfind¹¦ÄÜ
-" i: ²éÕÒ°üº¬±¾ÎÄ¼þµÄÎÄ¼þ
+" s: æŸ¥æ‰¾Cè¯­è¨€ç¬¦å·ï¼Œå³æŸ¥æ‰¾å‡½æ•°åã€å®ã€æžšä¸¾å€¼ç­‰å‡ºçŽ°çš„åœ°æ–¹
+" g: æŸ¥æ‰¾å‡½æ•°ã€å®ã€æžšä¸¾ç­‰å®šä¹‰çš„ä½ç½®ï¼Œç±»ä¼¼ctagsæ‰€æä¾›çš„åŠŸèƒ½
+" d: æŸ¥æ‰¾æœ¬å‡½æ•°è°ƒç”¨çš„å‡½æ•°
+" c: æŸ¥æ‰¾è°ƒç”¨æœ¬å‡½æ•°çš„å‡½æ•°
+" t: æŸ¥æ‰¾æŒ‡å®šçš„å­—ç¬¦ä¸²
+" e: æŸ¥æ‰¾egrepæ¨¡å¼ï¼Œç›¸å½“äºŽegrepåŠŸèƒ½ï¼Œä½†æŸ¥æ‰¾é€Ÿåº¦å¿«å¤šäº†
+" f: æŸ¥æ‰¾å¹¶æ‰“å¼€æ–‡ä»¶ï¼Œç±»ä¼¼vimçš„findåŠŸèƒ½
+" i: æŸ¥æ‰¾åŒ…å«æœ¬æ–‡ä»¶çš„æ–‡ä»¶
 
 
 " This tests to see if vim was configured with the '--enable-cscope' option
@@ -69,12 +69,12 @@ if has("cscope")
     " show msg when any other cscope db added
     set cscopeverbose
 
-    " Éè¶¨¿ÉÒÔÊ¹ÓÃ quickfix ´°¿ÚÀ´²é¿´ cscope ½á¹û
-    " ¿ÉÒÔÓÃÏÂÃæµÄÃüÁîÀ´Ìø×ª:
-    " :cw      // ´ò¿ªquickfix
-    " :cn      // ÇÐ»»µ½ÏÂÒ»¸ö½á¹û
-    " :cp      // ÇÐ»»µ½ÉÏÒ»¸ö½á¹û
-    " :cclose  // ¹Ø±Õquickfix
+    " è®¾å®šå¯ä»¥ä½¿ç”¨ quickfix çª—å£æ¥æŸ¥çœ‹ cscope ç»“æžœ
+    " å¯ä»¥ç”¨ä¸‹é¢çš„å‘½ä»¤æ¥è·³è½¬:
+    " :cw      // æ‰“å¼€quickfix
+    " :cn      // åˆ‡æ¢åˆ°ä¸‹ä¸€ä¸ªç»“æžœ
+    " :cp      // åˆ‡æ¢åˆ°ä¸Šä¸€ä¸ªç»“æžœ
+    " :cclose  // å…³é—­quickfix
     if has('quickfix')
         set cscopequickfix=s-,c-,d-,i-,t-,e-
     endif
